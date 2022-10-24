@@ -1,0 +1,627 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: 'GowunBatang-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes slideDown {
+    0% {opacity:0;transform:translateY(-15px);}
+    100% {opacity:1;transform:translateY(0px);}
+}
+@keyframes slideDown2 {
+    0% {opacity:0;transform:translateY(-100px);}
+    100% {opacity:1;transform:translateY(0px);}
+}
+@keyframes slideUp {
+    0% {opacity:0;transform:translateY(50px);}
+    100% {opacity:1;transform:translateY(0px);}
+}
+@keyframes slideLeft1 {
+    0% {opacity:1;transform:translateX(40px);}
+    100% {opacity:1;transform:translateX(0px);}
+}
+@keyframes slideRight1 {
+    0% {opacity:1;transform:translateX(-40px);}
+    100% {opacity:1;transform:translateX(0px);}
+}
+.fadeIn0 {
+    animation: fadeIn 2s backwards;
+    animation-delay: 3s;
+}
+.fadeIn {
+    animation: fadeIn 5s backwards;
+}
+.fadeIn1 {
+    animation: fadeIn 2s backwards;
+    animation-delay: 1s;
+}
+.fadeIn3 {
+    animation: fadeIn 2s backwards;
+    animation-delay: 4s;
+}
+.fadeIn4 {
+    animation: fadeIn 2s backwards;
+    animation-delay: 2s;
+
+}
+.fadeIn5 {
+    animation: fadeIn 2s backwards;
+    animation-delay: 3.5s;
+}
+.fadeIn6 {
+    animation: fadeIn 2s backwards;
+    animation-delay: 4.5s;
+}
+.fadeIn2 {
+    animation: fadeIn 3s backwards;
+    animation-delay: .5s;
+}
+.slideDown {
+    animation: slideDown 2s backwards;
+    animation-delay: 1s;
+}
+.slideDown2 {
+    animation: slideDown2 2s backwards;
+}
+.slideDown3 {
+    animation: slideDown 2s backwards;
+}
+.slideUp {
+    animation: slideUp 1s backwards;
+    animation-delay: 1s;
+}
+.slideLeft1 {
+    animation: slideLeft1 1s backwards;
+}
+.slideRight1 {
+    animation: slideRight1 1s backwards;
+    animation-delay: .5s;
+}
+.slideLeft2 {
+    animation: slideLeft1 1s backwards;
+    animation-delay: 1s;
+}
+.slideRight2 {
+    animation: slideRight1 1s backwards;
+    animation-delay: 1.5s;
+}
+
+
+
+.wrap {
+    width: 100%;
+    height: auto;
+    background-color: #0f111b;
+
+}
+
+/* header */
+
+header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: 1;
+}
+header .logo {
+    margin-top: 3.631%;
+    margin-left: 7.5%;
+}
+header .nav li {
+    font-family: Harry Potter;
+    font-size: 20px;
+    color: #fff;
+    float: right;
+    margin-left: 1.666%;
+    position: relative;
+    right: 7.5%;
+    top: -30px;
+}
+
+/* main */
+
+.main {
+    width: 100%;
+    height: 720px;
+    background: url(../img/indexmain.png) no-repeat center center;
+    background-size: cover;
+    
+}
+.main p:nth-of-type(1) {
+    font-family: Harry Potter;
+    font-size: 90px;
+    color: #fff;
+    text-align: center;
+    padding-top: 264px;
+    text-shadow: 30px 30px 30px #000;
+}
+.main p:nth-of-type(2) {
+    font-family: Gowun Batang;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 2px #000;
+}
+
+/* hogwarts */
+
+.hogwarts {
+    width: 100%;
+    height: 1579px;
+    background: url(../img/hogwarts.png) no-repeat center center;
+    background-size: cover;
+    margin-top: -122px;
+    padding-top: 570px;
+    padding-left: 11.77%;
+}
+.hogwarts p:nth-of-type(1) {
+    color: #fff;
+    font-family: Harry Potter;
+    font-size: 80px;
+    padding-bottom: 50px;
+    letter-spacing: 6px;
+}
+.hogwarts p:nth-of-type(2) span {
+    color: #fff;
+    font-family: Gowun Dodum;
+    font-size: 18px;
+    display: block;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+/* dormitory */
+.dormitory {
+    width: 100%;
+    height: 1106px;
+    background: url(../img/dormitorybg.png) no-repeat center center;
+    background-size: cover;
+}
+.dormitory p {
+    font-family: Harry Potter;
+    font-size: 70px;
+    color: #fff;
+    text-align: center;
+}
+.dormitory .dorm li {
+    float: left;
+    width: 20.291%;
+    height: auto;
+    margin-top: 150px;
+}
+.dormitory .dorm li:nth-of-type(1) {
+    float: left;
+    width: 20.291%;
+    height: auto;
+    margin-left: 8.972%;
+}
+.dormitory .dorm li img {
+    width: 100%;
+}
+
+/* preview */
+
+.preview {
+    width: 100%;
+    height: 1314px;
+    background: url(../img/preview.png) no-repeat center center;
+    background-size: cover;
+    margin-top: -200px;
+    padding-top: 470px;
+}
+
+.preview p {
+    font-size: 80px;
+    font-family: Harry Potter;
+    color: #fff;
+    margin-left: 16.625%;
+}
+.preview .pre li {
+    float: left;
+}
+.preview .pre li iframe {
+    margin-top: -170px;
+    margin-left: -18.208%;
+}
+.preview .pre .previewtxt span {
+    display: block;
+    font-size: 24px;
+    font-family: Gowun Dodum;
+    width: 900px;
+    margin-left: 5.083%;
+}
+.preview .pre .previewtxt span:first-of-type {
+    margin-left: 15.25%;
+}
+
+/* magicwand */
+
+.magicwand {
+    width: 100%;
+    height: 1000px;
+    background: url(../img/wandbg.png) no-repeat center center;
+    background-size: contain;
+    margin-top: 50px;
+}
+.magicwand p { 
+    color: #fff;
+    font-size: 80px;
+    font-family: Harry Potter;
+    text-align: center;
+}
+.magicwand .wand li {
+    display: block;
+    float: left;
+    width: 441px;
+    height: 449px;
+    padding-top: 220px;
+}
+.magicwand .wand li img {
+    width: 100%;
+}
+.magicwand .wand li img:first-of-type {
+    padding-left: 120px;
+}
+
+/* sub1 */
+
+.wrap2 {
+    width: 100%;
+    height: auto;
+    background-color: #010405;
+}
+
+/* author */
+
+.author {
+    width: 100%;
+    height: 2176px;
+    background: url(../img/authormain.png) no-repeat center center;
+    background-size: cover;
+}
+.author .authortxt {
+    padding-top: 200px;
+    padding-left: 11.197%;
+}
+.author .authortxt p:nth-of-type(1){
+    font-family: Gowun Batang;
+    font-size: 24px;
+    color: #fff;
+}
+.author .authortxt p:nth-of-type(2){
+    font-family: Gowun Batang;
+    font-size: 80px;
+    color: #fff;
+}
+.author .authortxt2 {
+    padding-left: 15.104%;
+    color: #fff;
+    font-family: Gowun Batang;
+    font-size: 18px;
+    padding-top: 750px;
+}
+.author .authortxt2 span {
+    display: block;
+    margin-bottom: 15px;
+}
+.author .authortxt2 span:nth-of-type(3) {
+    margin-bottom: 90px;
+}
+
+/* author2 */
+
+.author2 {
+    width: 100%;
+    height: 876px;
+    background: url(../img/authorstory.png) no-repeat center center;
+    background-size: contain;
+    margin-top: -100px;
+}
+.author2 .authortxt3 {
+    font-size: 18px;
+    font-family: Gowun Batang;
+    color: #fff;
+    text-align: center;
+    padding-top: 375px;
+}
+.author2 .authortxt3 span {
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* author3 */
+
+.author3 {
+    width: 100%;
+    height: 876px;
+    background: url(../img/authorstory2.png) no-repeat center center;
+    background-size: cover;
+}
+.author3 .authortxt4 {
+    font-family: Gowun Batang;
+    font-size: 18px;
+    color: #fff;
+    padding-top: 500px;
+    padding-left: 58.687%;
+}
+.author3 .authortxt4 span {
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* author4 */
+
+.author4 {
+    width: 100%;
+    height: 800px;
+}
+.author4 .authortxt5 {
+    font-family: Gowun Batang;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    padding-top: 400px;
+}
+.author4 .authortxt5 span {
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* character */
+
+.wrap3 {
+    width: 100%;
+    height: auto;
+}
+
+/* harry */
+
+.harry {
+    width: 100%;
+    height: 1000px;
+    background: url(../img/harrybg.png) no-repeat center center;
+    background-size: cover;
+}
+.harry .harrytxt {
+    color: #fff;
+    padding-top: 200px;
+    padding-left: 35.729%;
+    font-size: 50px;
+    font-family: Harry Potter;
+}
+.harry .harrytxt .bar {
+    display: block;
+    width: 255px;
+    height: 4px;
+    background-color: #fff;
+    margin-bottom: 45px;
+}
+.harry .harrytxt p span{
+    font-size: 16px;
+    font-family: Gowun Dodum;
+    display: block;
+    line-height: 25px;
+}
+.harry .harrytxt p span:nth-of-type(6){
+    margin-bottom: 20px;
+}
+.harry .harrytxt p span:nth-of-type(10){
+    margin-bottom: 20px;
+}
+.harry .harryimg {
+    margin-top: -600px;
+    padding-left: 5.833%;
+}
+.harry .harryimg li {
+    width: 22.229%;
+    height: auto;
+}
+.harry .harryimg li img{
+    width: 100%;
+    height: auto;
+}
+
+
+/* harmione */
+
+.harmione {
+    width: 100%;
+    height: 1117px;
+    background: url(../img/harmionebg.png) no-repeat center center;
+    background-size: cover;
+}
+.harmione .harmioneimg {
+    padding-right: 5.833%;
+    float: right;
+    margin-top: -650px;
+}
+.harmione .harmioneimg li {
+    width: 320px;
+    height: auto;
+}
+.harmione .harmioneimg li img{
+    width: 320px;
+    height: auto;
+}
+.harmione .harmionetxt {
+    font-size: 50px;
+    font-family: Harry Potter;
+    color: #fff;
+    padding-top: 310px;
+    padding-left: 38.562%;
+}
+.harmione .harmionetxt .bar {
+    display: block;
+    width: 200px;
+    height: 4px;
+    background-color: #fff;
+    margin-bottom: 45px;
+}
+.harmione .harmionetxt p span{
+    font-size: 16px;
+    font-family: Gowun Dodum;
+    display: block;
+    line-height: 25px;
+}
+.harmione .harmionetxt p span:nth-of-type(2){
+    margin-bottom: 20px;
+}
+.harmione .harmionetxt p span:nth-of-type(7){
+    margin-bottom: 20px;
+}
+.harmione .harmionetxt p span:nth-of-type(14){
+    margin-bottom: 20px;
+}
+
+
+/* ron */
+
+.ron {
+    width: 100%;
+    height: 1000px;
+    background: url(../img/ronbg.png) no-repeat center center;
+    background-size: cover;
+}
+.ron .rontxt {
+    color: #fff;
+    padding-top: 200px;
+    padding-left: 35.729%;
+}
+.ron .rontxt {
+    font-size: 50px;
+    font-family: Harry Potter;
+}
+.ron .rontxt .bar {
+    display: block;
+    width: 295px;
+    height: 4px;
+    background-color: #fff;
+    margin-bottom: 45px;
+}
+.ron .rontxt p span{
+    font-size: 16px;
+    font-family: Gowun Dodum;
+    display: block;
+    line-height: 25px;
+}
+.ron .rontxt p span:nth-of-type(2){
+    margin-bottom: 20px;
+}
+.ron .rontxt p span:nth-of-type(7){
+    margin-bottom: 20px;
+}
+.ron .rontxt p span:nth-of-type(11){
+    margin-bottom: 20px;
+}
+.ron .ronimg {
+    margin-top: -600px;
+    padding-left: 5.833%;
+}
+.ron .ronimg li {
+    width: 22.229%;
+    height: auto;
+}
+.ron .ronimg li img{
+    width: 100%;
+    height: auto;
+}
+
+
+/* malfoy */
+
+.malfoy {
+    width: 100%;
+    height: 1217px;
+    background: url(../img/malfoybg.png) no-repeat center center;
+    background-size: cover;
+}
+.malfoy .malfoyimg {
+    padding-right: 5.833%;
+    float: right;
+    margin-top: -600px;
+}
+.malfoy .malfoyimg li {
+    width: 320px;
+    height: auto;
+}
+.malfoy .malfoyimg li img{
+    width: 320px;
+    height: auto;
+}
+.malfoy .malfoytxt {
+    font-size: 50px;
+    font-family: Harry Potter;
+    color: #fff;
+    padding-top: 410px;
+    padding-left: 36.562%;
+}
+.malfoy .malfoytxt .bar {
+    display: block;
+    width: 270px;
+    height: 4px;
+    background-color: #fff;
+    margin-bottom: 45px;
+}
+.malfoy .malfoytxt p span{
+    font-size: 16px;
+    font-family: Gowun Dodum;
+    display: block;
+    line-height: 25px;
+}
+.malfoy .malfoytxt p span:nth-of-type(4){
+    margin-bottom: 20px;
+}
+.malfoy .malfoytxt p span:nth-of-type(10){
+    margin-bottom: 20px;
+}
+
+
+/*footer*/
+footer {
+    width: 100%;
+    height: 336px;
+    background-color: #242424;
+}
+footer .icon {
+    width: 100%;
+    height: 56px;
+    position: relative;
+    left: 45%;
+    top: 104px;
+}
+footer .icon li {
+    float: left;
+    margin-right: 1.25%;
+}
+footer p {
+    text-align: center;
+    color: #fff;
+    font-family: Cafe24SsurroundAir;
+    font-size: 16px;
+    margin-top: 180px;
+}
+footer p span {
+    display: block;
+    margin-top: 20px;
+}
+

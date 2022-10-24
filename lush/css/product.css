@@ -1,0 +1,865 @@
+@charset "utf-8";
+
+/* visual-750*/
+#visual .sub2-main {
+    background: url(../img/sub2-main.png) no-repeat left center;
+    background-size: cover;
+    width: 100%;
+    height: 665px;
+}
+#visual .sub2-main .txt {
+    position: relative;
+    top: 273px;
+}
+#visual .sub2-main .txt p:nth-child(1) {
+    animation: fadeOut 1s backwards;
+    animation-delay: 1s;
+    font-size: 4.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 11px;
+}
+#visual .sub2-main .txt p:nth-child(2) {
+    animation: fadeOut 1s backwards;
+    animation-delay: 1.5s;
+    font-size: 2.3rem;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+#visual .sub2-main .txt p span {
+    display: block;
+}
+/* visual2-750 end*/
+
+/* bath-750 */
+.bath {
+    width: 100%;
+    height: auto;
+    background-color: #f2f2f2;
+    margin-top: 105px;
+}
+.bath > h2 {
+    font-size: 3.0rem;
+    font-weight: 400px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 69px;
+}
+.bath ul {}
+.bath ul li {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+.bath ul li a {}
+.bath ul li a img {
+    width: 86.266%;
+}
+.bath ul li a .bath1 img {
+    height: 488px;
+}
+.bath ul li .txt {
+    position: relative;
+    top: -130px;
+    left: 17.6%;
+}
+.bath ul li .txt h2 {
+    font-size: 1.9rem;
+    text-align: left;
+    font-weight: 400;
+}
+.bath ul li .txt p {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 1.7rem;
+}
+/* bath-750 end*/
+
+/* shower-750 */
+.shower {
+    width: 100%;
+    height: auto;
+    background-color: #f2f2f2;
+    margin-top: 50px;
+}
+.shower > h2 {
+    font-size: 3.0rem;
+    font-weight: 400px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 69px;
+}
+.shower ul {}
+.shower ul li {
+    width: 100%;
+    text-align: center;
+}
+.shower ul li a {}
+.shower ul li a .bath1 {
+    width: 86.266%;
+}
+.shower ul li a .bath1 img  {
+    height: 488px;
+}
+.shower ul li .txt {
+    position: relative;
+    top: -130px;
+    left: 17.6%;
+}
+.shower ul li .txt h2 {
+    font-size: 1.9rem;
+    text-align: left;
+    font-weight: 400;
+}
+.shower ul li .txt p {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 1.7rem;
+}
+/* shower-750 end*/
+
+/* body-750 */
+.body {
+    width: 100%;
+    height: auto;
+    background-color: #f2f2f2;
+    margin-top: 50px;
+}
+.body > h2 {
+    font-size: 3.0rem;
+    font-weight: 400px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 69px;
+}
+.body ul {}
+.body ul li {
+    width: 100%;
+    text-align: center;
+}
+.body ul li a {}
+.body ul li a .bath1 {
+    width: 86.266%;
+}
+.body ul li a .bath1 img {
+    height: 488px;
+}
+.body ul li .txt {
+    position: relative;
+    top: -130px;
+    left: 17.6%;
+}
+.body ul li .txt h2 {
+    font-size: 1.9rem;
+    text-align: left;
+    font-weight: 400;
+}
+.body ul li .txt p {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 1.7rem;
+}
+/* body-750 end */
+
+/* face-750 */
+.face {
+    width: 100%;
+    height: auto;
+    background-color: #f2f2f2;
+    margin-top: 50px;
+}
+.face > h2 {
+    font-size: 3.0rem;
+    font-weight: 400px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 69px;
+}
+.face ul {}
+.face ul li {
+    width: 100%;
+    text-align: center;
+}
+.face ul li a {}
+.face ul li a .bath1 {
+    width: 86.266%;
+}
+.face ul li a .bath1 img {
+    height: 488px;
+}
+.face ul li .txt {
+    position: relative;
+    top: -130px;
+    left: 17.6%;
+}
+.face ul li .txt h2 {
+    font-size: 1.9rem;
+    text-align: left;
+    font-weight: 400;
+}
+.face ul li .txt p {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 1.7rem;
+} /* face-750 end */
+/* sub2-750 end */
+
+/* sub2-768 */
+@media all and (min-width:768px){
+    /* visual-750*/
+    #visual .sub2-main {
+        background: url(../img/sub2-main.png) no-repeat left center;
+        background-size: cover;
+        width: 100%;
+        height: 940px;
+    }
+    #visual .sub2-main .txt {
+        position: relative;
+        top: 385px;
+    }
+    #visual .sub2-main .txt p:nth-child(1) {
+        animation: fadeOut 1s backwards;
+        animation-delay: 1s;
+        font-size: 6.5rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 11px;
+    }
+    #visual .sub2-main .txt p:nth-child(2) {
+        animation: fadeOut 1s backwards;
+        animation-delay: 1.5s;
+        font-size: 4.5rem;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    #visual .sub2-main .txt p span {
+        display: block;
+    }
+    /* visual2-768 end*/
+
+    /* bath-768 */
+    .bath {
+        width: 100%;
+        height: auto;
+        background-color: #f2f2f2;
+        margin-top: 105px;
+    }
+    .bath > h2 {
+        font-size: 4.5rem;
+        font-weight: 400px;
+        text-align: center;
+        color: #000;
+        margin-bottom: 69px;
+    }
+    .bath ul {}
+    .bath ul li {
+        text-align: center;
+    }
+    .bath ul li a {}
+    .bath ul li a .bath1 {
+        width: 84.244%;
+    }
+    .bath ul li a .bath1 img {
+        height: 792px;
+    }
+    .bath ul li .txt {
+        position: relative;
+        top: -160px;
+        left: 13.020%;
+    }
+    .bath ul li .txt h2 {
+        font-size: 2.4rem;
+        text-align: left;
+        font-weight: 400;
+    }
+    .bath ul li .txt p {
+        text-align: left;
+        margin-bottom: 10px;
+        font-size: 2.0rem;
+    }
+    /* bath-768 end*/
+
+    /* shower-768 */
+    .shower {
+        width: 100%;
+        height: auto;
+        background-color: #f2f2f2;
+        margin-top: 50px;
+    }
+    .shower > h2 {
+        font-size: 4.5rem;
+        font-weight: 400px;
+        text-align: center;
+        color: #000;
+        margin-bottom: 69px;
+    }
+    .shower ul {}
+    .shower ul li {
+        width: 100%;
+        text-align: center;
+    }
+    .shower ul li a {}
+    .shower ul li a .bath1 {
+        width: 84.244%;
+    }
+    .shower ul li a .bath1 img  {
+        height: 792px;
+    }
+    .shower ul li .txt {
+        position: relative;
+        top: -160px;
+        left: 13.020%;
+    }
+    .shower ul li .txt h2 {
+        font-size: 2.4rem;
+        text-align: left;
+        font-weight: 400;
+    }
+    .shower ul li .txt p {
+        text-align: left;
+        margin-bottom: 10px;
+        font-size: 2.0rem;
+    }
+    /* shower-768 end*/
+
+    /* body-768 */
+    .body {
+        width: 100%;
+        height: auto;
+        background-color: #f2f2f2;
+        margin-top: 50px;
+    }
+    .body > h2 {
+        font-size: 4.5rem;
+        font-weight: 400px;
+        text-align: center;
+        color: #000;
+        margin-bottom: 69px;
+    }
+    .body ul {}
+    .body ul li {
+        width: 100%;
+        text-align: center;
+    }
+    .body ul li a {}
+    .body ul li a .bath1 {
+        width: 84.244%;
+    }
+    .body ul li a .bath1 img {
+        height: 792px;
+    }
+    .body ul li .txt {
+        position: relative;
+        top: -160px;
+        left: 13.020%;
+    }
+    .body ul li .txt h2 {
+        font-size: 2.4rem;
+        text-align: left;
+        font-weight: 400;
+    }
+    .body ul li .txt p {
+        text-align: left;
+        margin-bottom: 10px;
+        font-size: 2.0rem;
+    }
+    /* body-768 end */
+
+    /* face-768 */
+    .face {
+        width: 100%;
+        height: auto;
+        background-color: #f2f2f2;
+        margin-top: 50px;
+    }
+    .face > h2 {
+        font-size: 4.5rem;
+        font-weight: 400px;
+        text-align: center;
+        color: #000;
+        margin-bottom: 69px;
+    }
+    .face ul {}
+    .face ul li {
+        width: 100%;
+        text-align: center;
+    }
+    .face ul li a {}
+    .face ul li a .bath1 {
+        width: 84.244%;
+    }
+    .face ul li a .bath1 img {
+        height: 792px;
+    }
+    .face ul li .txt {
+        position: relative;
+        top: -160px;
+        left: 13.020%;
+    }
+    .face ul li .txt h2 {
+        font-size: 2.4rem;
+        text-align: left;
+        font-weight: 400;
+    }
+    .face ul li .txt p {
+        text-align: left;
+        margin-bottom: 10px;
+        font-size: 2.0rem;
+    } /* face-768 end */
+}
+
+@media all and (min-width:1024px){
+    /* visual-1024*/
+    #visual .sub2-main {
+        background: url(../img/sub2-main.png) no-repeat center;
+        background-size: cover;
+        width: 100%;
+        height: 940px;
+    }
+    #visual .sub2-main .txt {
+        position: relative;
+        top: 335px;
+    }
+    #visual .sub2-main .txt p:nth-child(1) {
+        animation: fadeOut 1s backwards;
+        animation-delay: 1s;
+        font-size: 6.5rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 21px;
+    }
+    #visual .sub2-main .txt p:nth-child(2) {
+        animation: fadeOut 1s backwards;
+        animation-delay: 1.5s;
+        font-size: 4.5rem;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    #visual .sub2-main .txt p span {
+        display: inline;
+    }
+    /* visual2-1024 end*/
+
+    /* bath-1024 */
+    .bath {
+        width: 100%;
+        height: 742px;
+        background-color: #f2f2f2;
+        margin-top: 153px;
+    }
+    .bath > h2 {
+        font-size: 4.5rem;
+        font-weight: 400px;
+        text-align: center;
+        color: #000;
+        margin-bottom: 71px;
+    }
+    .bath ul {}
+    .bath ul li:nth-child(1){
+        margin-left: 15px;
+    }
+    .bath ul li {
+        display: block;
+        width: 30.927%;
+        text-align: center;
+        float: left;
+        margin-left: 22px;
+    }
+    .bath ul li a {}
+    .bath ul li a .bath1 {
+        height: 450px;
+        width: 100%;
+    }
+    .bath ul li a .bath1 img {
+        width: 100%
+    }
+    .bath ul li .txt {
+        position: relative;
+        top: -130px;
+        left: 6.020%;
+    }
+    .bath ul li .txt h2 {
+        font-size: 2.4rem;
+        text-align: left;
+        font-weight: 400;
+    }
+    .bath ul li .txt p {
+        text-align: left;
+        margin-bottom: 10px;
+        font-size: 2.0rem;
+    }
+    /* bath-1024 end*/
+
+    /* shower-1024 */
+    .shower {
+        width: 100%;
+        height: 742px;
+        background-color: #f2f2f2;
+        margin-top: 50px;
+    }
+    .shower > h2 {
+        font-size: 4.5rem;
+        font-weight: 400px;
+        text-align: center;
+        color: #000;
+        margin-bottom: 69px;
+    }
+    .shower ul {}
+    .shower ul li:nth-child(1){
+        margin-left: 15px;
+    }
+    .shower ul li {
+        display: block;
+        width: 30.927%;
+        text-align: center;
+        float: left;
+        margin-left: 22px;
+    }
+    .shower ul li a {}
+    .shower ul li a .bath1 {
+        height: 450px;
+        width: 100%;
+    }
+    .shower ul li a .bath1 img  {}
+    .shower ul li .txt {
+        position: relative;
+        top: -130px;
+        left: 6.020%;
+    }
+    .shower ul li .txt h2 {
+        font-size: 2.4rem;
+        text-align: left;
+        font-weight: 400;
+    }
+    .shower ul li .txt p {
+        text-align: left;
+        margin-bottom: 10px;
+        font-size: 2.0rem;
+    }
+    /* shower-1024 end*/
+
+    /* body-1024 */
+    .body {
+        width: 100%;
+        height: 742px;
+        background-color: #f2f2f2;
+        margin-top: 50px;
+    }
+    .body > h2 {
+        font-size: 4.5rem;
+        font-weight: 400px;
+        text-align: center;
+        color: #000;
+        margin-bottom: 69px;
+    }
+    .body ul {}
+    .body ul li:nth-child(1){
+        margin-left: 15px;
+    }
+    .body ul li {
+        display: block;
+        width: 30.927%;
+        text-align: center;
+        float: left;
+        margin-left: 22px;
+    }
+    .body ul li a {}
+    
+    .body ul li a .bath1 {
+        height: 450px;
+        width: 100%;
+    }
+    .body ul li a .bath1 img {}
+    .body ul li .txt {
+        position: relative;
+        top: -130px;
+        left: 6.020%;
+    }
+    .body ul li .txt h2 {
+        font-size: 2.4rem;
+        text-align: left;
+        font-weight: 400;
+    }
+    .body ul li .txt p {
+        text-align: left;
+        margin-bottom: 10px;
+        font-size: 2.0rem;
+    }
+    /* body-1024 end */
+
+    /* face-1024 */
+    .face {
+        width: 100%;
+        height: 742px;
+        background-color: #f2f2f2;
+        margin-top: 50px;
+    }
+    .face > h2 {
+        font-size: 4.5rem;
+        font-weight: 400px;
+        text-align: center;
+        color: #000;
+        margin-bottom: 69px;
+    }
+    .face ul {}
+    .face ul li {
+        display: block;
+        width: 30.927%;
+        text-align: center;
+        float: left;
+        margin-left: 22px;
+    }
+    .face ul li a {}
+    .body ul li:nth-child(1){
+        margin-left: 15px;
+    }
+    .face ul li a .bath1 {
+        height: 450px;
+        width: 100%;
+    }
+    .face ul li a .bath1 img {
+        height: 792px;
+    }
+    .face ul li .txt {
+        position: relative;
+        top: -130px;
+        left: 6.020%;
+    }
+    .face ul li .txt h2 {
+        font-size: 2.4rem;
+        text-align: left;
+        font-weight: 400;
+    }
+    .face ul li .txt p {
+        text-align: left;
+        margin-bottom: 10px;
+        font-size: 2.0rem;
+    } /* face-1024 end */
+}
+
+@media all and (min-width:1300px){
+    /* visual-1024*/
+    #visual .sub2-main {
+        background: url(../img/sub2-main.png) no-repeat center;
+        background-size: cover;
+        width: 100%;
+        height: 940px;
+    }
+    #visual .sub2-main .txt {
+        position: relative;
+        top: 345px;
+    }
+    #visual .sub2-main .txt p:nth-child(1) {
+        animation: fadeOut 1s backwards;
+        animation-delay: 1s;
+        font-size: 6.5rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 21px;
+    }
+    #visual .sub2-main .txt p:nth-child(2) {
+        animation: fadeOut 1s backwards;
+        animation-delay: 1.5s;
+        font-size: 4.5rem;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    #visual .sub2-main .txt p span {
+        display: inline;
+    }
+    /* visual2-1024 end*/
+
+    /* bath-1024 */
+    .bath {
+        width: 100%;
+        height: 882px;
+        background-color: #f2f2f2;
+        margin-top: 153px;
+    }
+    .bath > h2 {
+        font-size: 4.5rem;
+        font-weight: 400px;
+        text-align: center;
+        color: #000;
+        margin-bottom: 71px;
+    }
+    .bath ul {
+        margin-left: 2.604%;
+    }
+    .bath ul li {
+        display: block;
+        width: 30.927%;
+        text-align: center;
+        float: left;
+    }
+    .bath ul li a {}
+    .bath ul li a .bath1 {
+        height: 627px;
+    }
+    .bath ul li a .bath1 img {
+        width: 100%
+    }
+    .bath ul li .txt {
+        position: relative;
+        top: -160px;
+        left: 13.020%;
+    }
+    .bath ul li .txt h2 {
+        font-size: 2.4rem;
+        text-align: left;
+        font-weight: 400;
+    }
+    .bath ul li .txt p {
+        text-align: left;
+        margin-bottom: 10px;
+        font-size: 2.0rem;
+    }
+    /* bath-1024 end*/
+
+    /* shower-1024 */
+    .shower {
+        width: 100%;
+        height: 882px;
+        background-color: #f2f2f2;
+        margin-top: 50px;
+    }
+    .shower > h2 {
+        font-size: 4.5rem;
+        font-weight: 400px;
+        text-align: center;
+        color: #000;
+        margin-bottom: 69px;
+    }
+    .shower ul {}
+    .shower ul li {
+        display: block;
+        width: 30.927%;
+        text-align: center;
+        float: left;
+    }
+    .shower ul {
+        margin-left: 2.604%;
+    }
+    .shower ul li a {}
+    .shower ul li a .bath1 {
+        height: 627px;
+    }
+    .shower ul li a .bath1 img  {
+        width: 100%;
+    }
+    .shower ul li .txt {
+        position: relative;
+        top: -160px;
+        left: 13.020%;
+    }
+    .shower ul li .txt h2 {
+        font-size: 2.4rem;
+        text-align: left;
+        font-weight: 400;
+    }
+    .shower ul li .txt p {
+        text-align: left;
+        margin-bottom: 10px;
+        font-size: 2.0rem;
+    }
+    /* shower-1024 end*/
+
+    /* body-1024 */
+    .body {
+        width: 100%;
+        height: 882px;
+        background-color: #f2f2f2;
+        margin-top: 50px;
+    }
+    .body > h2 {
+        font-size: 4.5rem;
+        font-weight: 400px;
+        text-align: center;
+        color: #000;
+        margin-bottom: 69px;
+    }
+    .body ul {}
+    .body ul {
+        margin-left: 2.604%;
+    }
+    .body ul li {
+        display: block;
+        width: 30.927%;
+        text-align: center;
+        float: left;
+    }
+    .body ul li a {}
+    .body ul li a .bath1 {
+        height: 627px;
+    }
+    .body ul li a .bath1 img {
+        width: 100%;
+    }
+    .body ul li .txt {
+        position: relative;
+        top: -160px;
+        left: 13.020%;
+    }
+    .body ul li .txt h2 {
+        font-size: 2.4rem;
+        text-align: left;
+        font-weight: 400;
+    }
+    .body ul li .txt p {
+        text-align: left;
+        margin-bottom: 10px;
+        font-size: 2.0rem;
+    }
+    /* body-1024 end */
+
+    /* face-1024 */
+    .face {
+        width: 100%;
+        height: 882px;
+        background-color: #f2f2f2;
+        margin-top: 50px;
+    }
+    .face > h2 {
+        font-size: 4.5rem;
+        font-weight: 400px;
+        text-align: center;
+        color: #000;
+        margin-bottom: 69px;
+    }
+    .face ul {}
+    .face ul {
+        margin-left: 2.604%;
+    }
+    .face ul li {
+        display: block;
+        width: 30.927%;
+        text-align: center;
+        float: left;
+    }
+    .face ul li a {}
+    .face ul li a .bath1 {
+        height: 627px;
+    }
+    .face ul li a .bath1 img {
+        width: 100%;
+    }
+    .face ul li .txt {
+        position: relative;
+        top: -160px;
+        left: 13.020%;
+    }
+    .face ul li .txt h2 {
+        font-size: 2.4rem;
+        text-align: left;
+        font-weight: 400;
+    }
+    .face ul li .txt p {
+        text-align: left;
+        margin-bottom: 10px;
+        font-size: 2.0rem;
+    } /* face-1024 end */
+}
