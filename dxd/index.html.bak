@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="wodtj=device.width, inital-scale=1.0">
+    <title>DXD main</title>
+    <link rel="stylesheet" href="../dxd/css/dxd.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/dxd.js"></script>
+</head>
+<body>
+	<header>
+        <div class="logo"><a href="index.html"><img src="../dxd/img/logo.png"></a></div>
+        <ul class="nav">
+            <li class="main-menu"><a href="shoesl.jsp">SHOES</a></li>
+            <li class="main-menu">
+                <a href="collabol.jsp">COLLABORATION</a>
+                <ul class="sub-menu hide">
+                    <li><a href="collabol.jsp">NIKE X STUSSY</a></li>
+                    <li><a href="collabol2.jsp">NIKE X OFF WHITE</a></li>
+                    <li><a href="collabol3.jsp">NIKE X SUPREME</a></li>
+                </ul><!--sub-menu-->
+            </li>
+            <li class="main-menu">
+                <a href="socksl.jsp">ACC</a>
+                <ul class="sub-menu hide">
+                    <li><a href="socksl.jsp">SOCKS</a></li>
+                    <li><a href="shoestiel.jsp">SHOES TIE</a></li>
+                </ul><!--sub-menu--></li>
+            </li>
+            <li class="main-menu"><a href="communityl.jsp">COMMUNITY</a></li>
+            <li class="main-menu">
+				<a href="login.jsp">LOGIN</a>
+				<ul class="sub-menu hide">
+                    <li><a href="collabol.jsp">관리자<br> 로그인</a></li>
+                </ul><!--sub-menu-->
+			</li>
+            <li class="main-menu"><a href="login.jsp"><img src="../dxd/img/mypage.png"></a></li>
+            <li class="main-menu"><a href="showCart.jsp"><img src="../dxd/img/cart.png"></a></li>
+        </ul>
+    </header>
+    <div class="main">
+        <video loop="" autoplay="" muted="" width="100%">
+            <source src="../dxd/ad.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="dxdintroduce">
+        <img src="../dxd/img/mainnike.png">
+        <img src="../dxd/img/stussydesigner.png">
+        <img src="../dxd/img/supremedesigner.png">
+        <img src="../dxd/img/offwhitedesigner.png">
+        <div class="introtxt">
+            <p>
+                <span>DXD</span>
+                <span>Designer</span> 
+                <span>X</span>
+                <span>Designer</span>
+            </p>
+        </div><!--introtxt-->
+    </div><!--dxdintroduce-->
+
+    <div class="concept">
+        <img src="../dxd/img/concept1.png">
+        <img src="../dxd/img/concept2.png">
+        <div class="contxt">
+            <p>Our concept</p>
+            <p>저희는 나이키 브랜드와 같이 콜라보한<span>브랜드 운동화를 판매하는 사이트로</span>
+            <span>스투시, 오프화이트, 슈프림 브랜드와 함께합니다.</span></p>
+        </div>
+    </div><!--concept--> 
+
+    <div class="basicNew">
+        <p>BASIC NEW</p>
+        <ul class="basic1">
+            <li><img src="../dxd/img/basicnew1.png"></li>
+            <li class="basictxt">
+                <p>나이키 덩크 하이 업</p>
+                <p>80년대 농구 아이콘을 완벽하게 재해석한 나이키 덩크 하이레블
+                    <span>클래식 하이 탑 디자인과 스포티한 본질, 높은 중창을 사용해 농구 DNA에</span>
+                    <span>충실하면서 걸음마다 자신감을 표현해 줍니다.</span>
+                </p>
+                <p><a href="viewDetailProduct.jsp?prdNo=s10"><span>자세히 보기</span></a></p>
+            </li>
+        </ul>
+        <ul class="basic1">
+            <li><img src="../dxd/img/basicnew2.png"></li>
+            <li class="basictxt">
+                <p>에어조던 5레트로</p>
+                <p>여전히 신선하며 늘 사랑받는 에어조던 5레트로
+                    <span>에어조던 5레트로는 편안함을 위해 업데이트되었습니다.</span>
+                    <span>에어조던 5레트로는 1990년 클래식 룩과 매치됩니다.</span>
+                </p>
+                <p><a href="viewDetailProduct.jsp?prdNo=s5"><span>자세히 보기</span></a></p>
+            </li>
+        </ul>
+        <ul class="basic1">
+            <li><img src="../dxd/img/basicnew3.png"></li>
+            <li class="basictxt">
+                <p>에어맥스 2021</p>
+                <p>여전히 신선하며 늘 사랑받는 에어조던 5레트로
+                    <span>에어조던 5레트로는 편안함을 위해 업데이트되었습니다.</span>
+                    <span>에어조던 5레트로는 1990년 클래식 룩과 매치됩니다.</span>
+                </p>
+                <p><a href="viewDetailProduct.jsp?prdNo=s6"><span>자세히 보기</span></a></p>
+            </li>
+        </ul>
+    </div><!--basiNew-->
+
+    <footer>
+        <ul class="icon">
+            <li><img src="../dxd/img/insta.png"></li>
+            <li><img src="../dxd/img/facebook.png"></li>
+        </ul>
+        <p>
+            Address : Gangnam, Seoul, Korea / tel : 010-1212-3232 / E-mail : dxd@naver.com
+            <span>Copyright : dxd.All rights reserved.</span>
+        </p>
+    </footer>
+</body>
+</html>

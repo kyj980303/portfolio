@@ -1,0 +1,215 @@
+<%@ page contentType="text/html;charset=euc-kr" %>
+<%@ page import="java.sql.*" %>
+
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="wodtj=device.width, inital-scale=1.0">
+    <title>community</title>
+    <link rel="stylesheet" href="../dxd/css/dxd.css"> 
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/dxd.js"></script>
+</head>
+<body>
+
+<%
+	String id = (String)session.getAttribute("sid");          
+%>
+	<header>
+        <div class="logo"><a href="index.jsp"><img src="../dxd/img/logo.png"></a></div>
+        <ul class="nav">
+            <li class="main-menu"><a href="shoes.jsp">SHOES</a></li>
+            <li class="main-menu">
+                <a href="collabo.jsp">COLLABORATION</a>
+                <ul class="sub-menu hide">
+                    <li><a href="collabo.jsp">NIKE X STUSSY</a></li>
+                    <li><a href="collabo2.jsp">NIKE X OFF WHITE</a></li>
+                    <li><a href="collabo3.jsp">NIKE X SUPREME</a></li>
+                </ul><!--sub-menu-->
+            </li>
+            <li class="main-menu">
+                <a href="socks.jsp">ACC</a>
+                <ul class="sub-menu hide">
+                    <li><a href="socks.jsp">SOCKS</a></li>
+                    <li><a href="shoestie.jsp">SHOES TIE</a></li>
+                </ul><!--sub-menu--></li>
+            </li>
+            <li class="main-menu"><a href="community.jsp">COMMUNITY</a></li>
+            <li class="main-menu"><a href="logout.jsp">LOGOUT</a></li>
+            <li class="main-menu"><a href="updateMember.jsp?id=<%=id%>"><img src="../dxd/img/mypage.png"></a></li>
+            <li class="main-menu"><a href="showCart.jsp"><img src="../dxd/img/cart.png"></a></li>
+        </ul>
+    </header>
+    <div class="cm">
+        <p>COMMUNITY</p>
+    </div>  
+   <div class="com">
+    <p>게시판 목록</p>
+       
+
+    <div class="com2">
+         <a href=index.html><img src="../dxd/img/button.png"></a>
+
+    </div>
+<center>
+    <table>
+
+        
+        <tr style="background: rgb(131, 122, 116);">
+            <th>번호</th>
+            <th>제목</th>
+            <th>글쓴이</th>
+            <th>날짜</th>
+        </tr>
+        <tr>
+            <td><strong>1</strong></td>
+            <td><strong>상품이 안왔어요!</strong></td>
+            <td><strong>김연징</strong></td>
+            <td><strong>2021.03.05</strong></td>
+        </tr>
+
+
+        <tr>
+            <td><strong>2</strong></td>
+            <td><strong>배송주문을 어떻게 하나요?</strong></td>
+            <td><strong>이수댕</strong></td>
+            <td><strong>2021.02.03</strong></td>
+        </tr>
+        
+
+
+        <tr>
+            <td><strong>3</strong></td>
+            <td><strong>품절된 상품은 어떻게 하나요?</strong></td>
+            <td><strong>김가희</strong></td>
+            <td><strong>2021.05.06</strong></td>
+        </tr>
+
+
+        <tr>
+            <td><strong>3</strong></td>
+            <td><strong>품절된 상품은 어떻게 하나요?</strong></td>
+            <td><strong>김가희</strong></td>
+            <td><strong>2021.05.06</strong></td>
+        </tr>
+
+        <tr>
+            <td><strong>3</strong></td>
+            <td><strong>품절된 상품은 어떻게 하나요?</strong></td>
+            <td><strong>김가희</strong></td>
+            <td><strong>2021.05.06</strong></td>
+        </tr>
+
+        <tr>
+            <td><strong>3</strong></td>
+            <td><strong>품절된 상품은 어떻게 하나요?</strong></td>
+            <td><strong>김가희</strong></td>
+            <td><strong>2021.05.06</strong></td>
+        </tr>
+
+        <tr>
+            <td><strong>3</strong></td>
+            <td><strong>품절된 상품은 어떻게 하나요?</strong></td>
+            <td><strong>김가희</strong></td>
+            <td><strong>2021.05.06</strong></td>
+        </tr>
+
+        <tr>
+            <td><strong>3</strong></td>
+            <td><strong>품절된 상품은 어떻게 하나요?</strong></td>
+            <td><strong>김가희</strong></td>
+            <td><strong>2021.05.06</strong></td>
+        </tr>
+
+        <tr>
+            <td><strong>3</strong></td>
+            <td><strong>품절된 상품은 어떻게 하나요?</strong></td>
+            <td><strong>김가희</strong></td>
+            <td><strong>2021.05.06</strong></td>
+        </tr>
+
+
+        <tr>
+            <td><strong>3</strong></td>
+            <td><strong>품절된 상품은 어떻게 하나요?</strong></td>
+            <td><strong>김가희</strong></td>
+            <td><strong>2021.05.06</strong></td>
+        </tr>
+
+        <tr>
+            <td><strong>3</strong></td>
+            <td><strong>품절된 상품은 어떻게 하나요?</strong></td>
+            <td><strong>김가희</strong></td>
+            <td><strong>2021.05.06</strong></td>
+        </tr>
+
+        <tr>
+            <td><strong>3</strong></td>
+            <td><strong>품절된 상품은 어떻게 하나요?</strong></td>
+            <td><strong>김가희</strong></td>
+            <td><strong>2021.05.06</strong></td>
+        </tr>
+
+        <tr>
+            <td><strong>3</strong></td>
+            <td><strong>품절된 상품은 어떻게 하나요?</strong></td>
+            <td><strong>김가희</strong></td>
+            <td><strong>2021.05.06</strong></td>
+        </tr>
+
+        <tr>
+            <td><strong>3</strong></td>
+            <td><strong>품절된 상품은 어떻게 하나요?</strong></td>
+            <td><strong>김가희</strong></td>
+            <td><strong>2021.05.06</strong></td>
+        </tr>
+
+        <tr>
+            <td><strong>3</strong></td>
+            <td><strong>품절된 상품은 어떻게 하나요?</strong></td>
+            <td><strong>김가희</strong></td>
+            <td><strong>2021.05.06</strong></td>
+        </tr>
+
+        <tr>
+            <td><strong>3</strong></td>
+            <td><strong>품절된 상품은 어떻게 하나요?</strong></td>
+            <td><strong>김가희</strong></td>
+            <td><strong>2021.05.06</strong></td>
+        </tr>
+
+        <tr>
+            <td><strong>3</strong></td>
+            <td><strong>품절된 상품은 어떻게 하나요?</strong></td>
+            <td><strong>김가희</strong></td>
+            <td><strong>2021.05.06</strong></td>
+        </tr>
+
+
+        
+    </table>
+</center>
+
+</div>
+
+
+
+
+        
+
+    
+
+
+
+    <footer>
+        <ul class="icon">
+            <li><a href="#"><img src="../dxd/img/insta.png"></a></li>
+            <li><a href="#"><img src="../dxd/img/facebook.png"></a></li>
+        </ul>
+        <p>
+            Address : Gangnam, Seoul, Korea / tel : 010-1212-3232 / E-mail : dxd@naver.com
+            <span>Copyright : dxd.All rights reserved.</span>
+        </p>
+    </footer>
+</body>
+</html>

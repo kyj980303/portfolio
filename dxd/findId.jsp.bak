@@ -1,0 +1,30 @@
+<%@ page contentType="text/html;charset=euc-kr" %>
+
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+	<title>아이디 찾기</title>
+	<script language="javascript" src="js_package.js"></script>
+</head>
+<body>
+<br><br><br><br><br><br><br><br>
+<form method = "post" action="findIdResult.jsp">
+<center>
+ <table border=0 cellpadding=5 style="font-size:10pt;font-family:맑은 고딕">
+	<h1>아이디 찾기</h1>
+         <tr>
+            <td><font size=2>이름 :  </font></td>
+			<td><input type="text" name="name"  style="width:120;height=20"></td>
+			<td rowspan=2><a href="javascript:login_check()" style="font-size:10pt;font-family:맑은 고딕">
+         </tr>
+         <tr>
+            <td><font size=2>패스워드 : </font></td>
+            <td><input type="password" name="pass"  style="width:120;height=20"  onkeydown="onEnterSubmit()"></td> 
+	     </tr>
+      </table><p> 
+	  <a href="findIdResult.jsp"><input type="submit" value="찾기"></a>
+	  <a href="login.jsp"><input type="button" value="취소"></a>
+</center>
+</form>
+</body>
+</html>
