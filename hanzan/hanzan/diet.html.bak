@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="wodtj=device.width, inital-scale=1.0">
+    <title>피로회복</title>
+    <link rel="stylesheet" href="../hanzan/css/hanzan.css">
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/hanzan.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html"><img src="../hanzan/img/logo.png"></a></div>
+        <button class="btn_nav mobile hide"><img src="./img/menuicon.png"></button>
+        <ul class="nav">
+            <li class="main-menu"><a href="teastory.html">차 이야기</a></li>
+            <li class="main-menu">
+                <a href="#">차 가게</a>
+                <ul class="sub-menu1 hide">
+                    <li><a href="subn.html">녹차/발효차/홍차</a></li>
+                    <li><a href="subm.html">허브티(무카페인)</a></li>
+                    <li><a href="subb.html">블랜디드티</a></li>
+                </ul><!--sub-menu-->
+            </li>
+            <li class="main-menu">
+				<a href="#">다과</a>
+                <ul class="sub-menu3 hide">
+                    <li><a href="desert.html">한과</a></li>
+                    <li><a href="desert2.html">화과자</a></li>
+                </ul><!--sub-menu-->
+			</li>
+            <li class="main-menu">
+                <a href="#">다구</a>
+                <ul class="sub-menu2 hide">
+                    <li><a href="teazan.html">찻잔</a></li>
+                    <li><a href="teapot.html">티팟</a></li>
+                </ul><!--sub-menu-->
+            </li>
+            <li class="main-menu"><a href="haru.html">하루한잔</a></li>
+            <li class="main-menu"><a href="login.html">LOGIN</a></li>
+            <li class="main-menu"><a href="login.html"><img src="../hanzan/img/mypage.png"></a></li>
+            <li class="main-menu"><a href="showCart.html"><img src="../hanzan/img/cart.png"></a></li>
+        </ul>
+        
+        <div class="nav2 hide">
+            <nav id="navWrap">
+                <div class="nav_inner">
+                    <div class="logo2"><img src="./img/logo.png"></div>
+                    <div class="close"><img src="./img/x.png"></div>
+                    <ul class="gnb">
+                        <li> <!--브랜드스토리 클릭했을때 열리게-->
+                            <a href="teastory.html">차 이야기
+                        </li>
+                        <li> <!--브랜드스토리 클릭했을때 열리게-->
+                            <a href="#">차 가게<img src="./img/arrowdown.png"></a>
+                            <div class="sub_wrap hide">
+                                <div class="left">
+                                    <ul>
+                                        <li><a href="subn.html">녹차/발효차/홍차</a></li>
+                                        <li><a href="subm.html">허브티(무카페인)</a></li>
+                                        <li><a href="subb.html">블랜디드티</a></li>
+                                    </ul>
+                                </div><!--left-->
+                            </div><!--sub_wrap mobile:sub pc:absolute-->
+                        </li>
+                        <li> <!--브랜드스토리 클릭했을때 열리게-->
+                            <a href="#">다과<img src="./img/arrowdown.png"></a>
+                            <div class="sub_wrap hide">
+                                <div class="left">
+                                    <ul>
+                                        <li><a href="desert.html">한과</a></li>
+                                        <li><a href="desert2.html">화과자</a></li>
+                                    </ul>
+                                </div><!--left-->
+                            </div><!--sub_wrap mobile:sub pc:absolute-->
+                        </li>
+                        <li> <!--브랜드스토리 클릭했을때 열리게-->
+                            <a href="#">다구<img src="./img/arrowdown.png"></a>
+                            <div class="sub_wrap hide">
+                                <div class="left">
+                                    <ul>
+                                        <li><a href="teazan.html">찻잔</a></li>
+                                        <li><a href="teapot.html">티팟</a></li>
+                                    </ul>
+                                </div><!--left-->
+                            </div><!--sub_wrap mobile:sub pc:absolute-->
+                        </li>
+                        <li> <!--브랜드스토리 클릭했을때 열리게-->
+                            <a href="haru.html">하루한잔</a>
+                        </li>
+                        <li><a href="login.html">로그인<img src="../hanzan/img/loginikon.png"></a></li>
+                        <li><a href="login.html">마이페이지<img src="../hanzan/img/mypageikon2.png"></a></li>
+                        <li><a href="showCart.html">장바구니<img src="../hanzan/img/cartikon2.png"></a></li>
+                    </ul>
+                </div><!--nav_inner mobile:흰색영역 pc:가운데정렬-->
+            </nav><!--navWrap mobile:검은영역 pc:전체영역-->
+        </div> 
+    </header>
+
+    <div class="recover">
+        <div class="fcontent">
+            <p>차 이야기</p>
+            <p>다이어트에 좋은 차</p>
+            <div class="fbar"></div>
+            <img src="./img/arrow.png">
+        </div>
+        <div class="fcontent2">
+            <img src="./img/tstory2.png">
+            <p>다이어트에 도움이 되는 차는 보이차입니다.</p>
+            <p>
+                <span>보이차는 우리 몸의 해로운 기름기를 제거해 주고 숙취, 소화, 갈증해소에 도움을 줍니다.</span>
+                <span>또한 보이차는 체지방 분해, 식욕 억제, 내장지방 감소, 콜레스테롤 개선 등에 효과적입니다.</span>
+                <span>다이어트에 효과적인 보이차를 주기적으로 섭취해 주면 체중, 허리둘레, 내장지방 수치가</span>
+                <span>감소한다고 합니다.</span>
+                <span>보이차에는 '갈산'이라는 성분이 있는데 갈산은 몸에 유해한 활성산소를 제거해 주는 역할을 하며</span>
+                <span>지방 축적을억제하고 지방이 쌓이기 전에 몸 밖으로 배출해 주는 효과가 있어 체지방 감소에 도움을 </span>
+                <span>줍니다. 그리고 따뜻한 보이차는 소화작용을 돕고 장운동을 촉진시켜 배변활동에 도움을 줘서</span>
+                <span>변비 예방에 좋습니다.</span>
+                <span>하지만 보이차에는 탄닌이 들어있어 철분 흡수를 방해하기 때문에 철분제나 기타 약물을 복용하시는 </span>
+                <span>분들은 주의해서 섭취해야 합니다. 또 위가 약한 분들에게는 속 쓰림이나 설사를 유발할 수 있어 좋지 </span>
+                <span>않으며 카페인에 예민하신 분들은 조금만 마셔주는 것이 좋습니다.</span>
+                <span>해줍니다.하루에 황기 20g을 300ml의 물에 넣고 절반 분량이 될 때까지 졸여 차처럼 수시로 마시면 </span>
+                <span>보이차는 하루 1L 미만으로 드시는 것이 좋으며 너무 진하게 많이 드시게 되면 수분 부족 현상이</span>
+                <span>오미자차는 몸이 나른하고 피곤을 느낄 때 한 잔씩 마셔주면 좋습니다.</span>
+                <span>일어날 수 있으므로 주의해야 합니다.</span>
+            </p>
+        </div>
+    </div>
+    
+    <footer>
+        <ul class="icon">
+            <li><a href = "https://www.instagram.com/"><img src="../hanzan/img/insta.png"></a></li>
+            <li><a href = "https://www.facebook.com/"><img src="../hanzan/img/facebook.png"></a></li>
+        </ul>
+        <p><span><a href="adminlogin.jsp">관리자 로그인</a></span>
+            Address : Gangnam, Seoul, Korea / tel : 010-1212-3232 / E-mail : hanzan@naver.com
+            <span>Copyright : hanzan.All rights reserved.</span>
+        </p>
+    </footer>
+</body>
+</html>

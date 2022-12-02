@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>    주문관리       </title>
+</head>
+<body>
+<br><br><br><br>
+<p align="center"><b><font color="blue" size="6"> [주문 관리] </font></b>
+<br><br><br><br>
+
+<p align="center"><b><a href="selectAllorder.jsp">전체 등록주문 조회</a></b>
+<p align="center"><b><a href="selectDetailorder.jsp">주문 상세정보 조회</a></b>
+<p align="center"><b><a href="updateorder.jsp">주문 수정</a></b>
+<p align="center"><b><a href="deleteorder.jsp">주문 삭제</a></b>
+<br><br>
+</body>
+</html>
+

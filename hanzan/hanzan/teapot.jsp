@@ -1,0 +1,176 @@
+<%@ page contentType="text/html;charset=euc-kr" pageEncoding="utf-8" %>
+<%@ page import="java.sql.*" %>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="wodtj=device.width, inital-scale=1.0">
+    <title>hanzan main</title>
+    <link rel="stylesheet" href="../hanzan/css/hanzan.css">
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/hanzan.js"></script>
+</head>
+<body>
+    <%
+     //   로그인 상태를 유지하기 위하여, sid에 저장되었던 접속한 ID값을 
+     //   session 객체로부터 가져와서 변수 id에 저장시킴 (loginOK.jsp의 43행부분 확인요망!)
+   String id = (String)session.getAttribute("sid"); 
+   // String id = session.getAttribute("sid").toString(); 와  동일함
+                                                                                         
+%>
+    <header>
+        <div class="logo">
+		<%if(id == "" || id == null){%>
+         <a href="index.html">
+      <%} else {%>
+         <a href="index.jsp">
+      <%}%>
+		<img src="../hanzan/img/logo.png"></a></div>
+        <ul class="nav">
+            <li class="main-menu"><a href="teastory.jsp">차 이야기</a></li>
+            <li class="main-menu">
+                <a href="#">차 가게</a>
+                <ul class="sub-menu1 hide">
+                    <li><a href="subn.jsp">녹차/발효차/홍차</a></li>
+                    <li><a href="subm.jsp">허브티(무카페인)</a></li>
+                    <li><a href="subb.jsp">블랜디드티</a></li>
+                </ul><!--sub-menu-->
+            </li>
+            <li class="main-menu">
+				<a href="#">다과</a>
+                <ul class="sub-menu3 hide">
+                    <li><a href="desert.jsp">한과</a></li>
+                    <li><a href="desert2.jsp">화과자</a></li>
+                </ul><!--sub-menu-->
+			</li>
+            <li class="main-menu">
+                <a href="#">다구</a>
+                <ul class="sub-menu2 hide">
+                    <li><a href="teazan.jsp">찻잔</a></li>
+                    <li><a href="teapot.jsp">티팟</a></li>
+                </ul><!--sub-menu-->
+            </li>
+            <li class="main-menu"><a href="haru.jsp">하루한잔</a></li>
+			<li class="main-menu"><%if(id == "" || id == null){%>
+                           <a href="login.html"> LOGIN
+                        <%} else {%>
+                           <a href="logout.jsp"> LOGOUT 
+                        <%}%></a></li>
+            <li class="main-menu"><a href="mypage.jsp"><img src="../hanzan/img/mypage.png"></a></li>
+            <li class="main-menu"><a href="showCart.jsp"><img src="../hanzan/img/cart.png"></a></li>
+        </ul>
+    </header>
+
+    <div class="teapotmain">
+        <div class="teapottxt">
+            <p>티팟</p>
+            <p>차와 함께하기 좋은 티팟을 소개해 드립니다.</p>
+        </div>
+    </div>
+    
+    <div class="hu1">
+        <div class="hu1txt">
+            <p>Recommend</p>
+            <p>언제 어디서나 편하게<span>차를 즐길 수 있는 휴대용 다구 세트</span></p>
+            <a href="#">자세히 보기</a>
+        </div>
+    </div>
+
+    <div class="teapot">
+        <p class="pot">티팟</p>
+        <ul class="pot1">
+            <li>
+                <a href="viewDetailProduct7.jsp?prdNo=T1"><img src="./img/tp1.png"></a>
+                <div class="pottxt">
+                    <p>베이직 흰 티팟</p><a href="#"><img src="./img/arrow.png"></a>
+                    <p><span>30,000원</span></p>
+                </div>
+            </li>
+            <li>
+                <a href="viewDetailProduct7.jsp?prdNo=T2"><img src="./img/tp2.png"></a>
+                <div class="pottxt">
+                    <p>옐로우 코끼리티팟</p><a href="#"><img src="./img/arrow.png"></a>
+                    <p><span>35,000원</span></p>
+                </div>
+            </li>
+            <li>
+                <a href="viewDetailProduct7.jsp?prdNo=T3"><img src="./img/tp3.png"></a>
+                <div class="pottxt">
+                    <p>파스텔 티팟</p><a href="#"><img src="./img/arrow.png"></a>
+                    <p><span>28,000원</span></p>
+                </div>
+            </li>
+            <li>
+                <a href="viewDetailProduct7.jsp?prdNo=T4"><img src="./img/tp4.png"></a>
+                <div class="pottxt">
+                    <p>화이트 베이직 티팟</p><a href="#"><img src="./img/arrow.png"></a>
+                    <p><span>26,000원</span></p>
+                </div>
+            </li>
+            <li>
+                <a href="viewDetailProduct7.jsp?prdNo=T5"><img src="./img/tp5.png"></a>
+                <div class="pottxt">
+                    <p>투명 베이직 티팟</p><a href="#"><img src="./img/arrow.png"></a>
+                    <p><span>30,000원</span></p>
+                </div>
+            </li>
+            <li>
+                <a href="viewDetailProduct7.jsp?prdNo=T6"><img src="./img/tp6.png"></a>
+                <div class="pottxt">
+                    <p>텀블러형 티팟</p><a href="#"><img src="./img/arrow.png"></a>
+                    <p><span>35,000원</span></p>
+                </div>
+            </li>
+            <li>
+                <a href="viewDetailProduct7.jsp?prdNo=T7"><img src="./img/tp7.png"></a>
+                <div class="pottxt">
+                    <p>내열유리 티팟</p><a href="#"><img src="./img/arrow.png"></a>
+                    <p><span>30,000원</span></p>
+                </div>
+            </li>
+            <li>
+                <a href="viewDetailProduct7.jsp?prdNo=T8"><img src="./img/tp8.png"></a>
+                <div class="pottxt">
+                    <p>투명 마개 티팟</p><a href="#"><img src="./img/arrow.png"></a>
+                    <p><span>35,000원</span></p>
+                </div>
+            </li>
+            <li>
+                <a href="viewDetailProduct7.jsp?prdNo=T10"><img src="./img/tp10.png"></a>
+                <div class="pottxt">
+                    <p>황금색 심플 티팟</p><a href="#"><img src="./img/arrow.png"></a>
+                    <p><span>30,000원</span></p>
+                </div>
+            </li>
+            <li>
+                <a href="viewDetailProduct7.jsp?prdNo=T11"><img src="./img/tp11.png"></a>
+                <div class="pottxt">
+                    <p>꽃무늬 티팟</p><a href="#"><img src="./img/arrow.png"></a>
+                    <p><span>40,000원</span></p>
+                </div>
+            </li>
+            <li>
+                <a href="viewDetailProduct7.jsp?prdNo=T12"><img src="./img/tp12.png"></a>
+                <div class="pottxt">
+                    <p>화이트 티팟</p><a href="#"><img src="./img/arrow.png"></a>
+                    <p><span>30,000원</span></p>
+                </div>
+            </li>
+
+
+        </ul>
+    </div><!--teapot-->
+    
+    <footer>
+        <ul class="icon">
+            <li><a href = "https://www.instagram.com/"><img src="../hanzan/img/insta.png"></a></li>
+            <li><a href = "https://www.facebook.com/"><img src="../hanzan/img/facebook.png"></a></li>
+        </ul>
+        <p><span><a href="adminlogin.jsp">관리자 로그인</a></span>
+            Address : Gangnam, Seoul, Korea / tel : 010-1212-3232 / E-mail : hanzan@naver.com
+            <span>Copyright : hanzan.All rights reserved.</span>
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<%@ page contentType="text/html;charset=euc-kr" %>
+<%@ page import="java.sql.*" %>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="wodtj=device.width, inital-scale=1.0">
+    <title>hanzan main</title>
+    <link rel="stylesheet" href="../hanzan/css/hanzan.css">
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/hanzan.js"></script>
+	<script language="javascript" src="js_package.js"></script>
+
+</head>
+<body>
+    <%
+     //   로그인 상태를 유지하기 위하여, sid에 저장되었던 접속한 ID값을 
+     //   session 객체로부터 가져와서 변수 id에 저장시킴 (loginOK.jsp의 43행부분 확인요망!)
+   String id = (String)session.getAttribute("sid"); 
+   // String id = session.getAttribute("sid").toString(); 와  동일함
+                                                                                         
+%>
+    <header>
+        <div class="logo">
+		<%if(id == "" || id == null){%>
+         <a href="index.html">
+      <%} else {%>
+         <a href="index.jsp">
+      <%}%>
+		<img src="../hanzan/img/logo.png" style="margin-top:20px"></a></div>
+        <ul class="nav">
+            <li class="main-menu"><a href="teastory.jsp">차 이야기</a></li>
+            <li class="main-menu">
+                <a href="#">차 가게</a>
+                <ul class="sub-menu1 hide">
+                    <li><a href="subn.jsp">녹차/발효차/홍차</a></li>
+                    <li><a href="subm.jsp">허브티(무카페인)</a></li>
+                    <li><a href="subb.jsp">블랜디드티</a></li>
+                </ul><!--sub-menu-->
+            </li>
+            <li class="main-menu">
+				<a href="#">다과</a>
+                <ul class="sub-menu3 hide">
+                    <li><a href="desert.jsp">한과</a></li>
+                    <li><a href="desert2.jsp">화과자</a></li>
+                </ul><!--sub-menu-->
+			</li>
+            <li class="main-menu">
+                <a href="#">다구</a>
+                <ul class="sub-menu2 hide">
+                    <li><a href="teazan.jsp">찻잔</a></li>
+                    <li><a href="teapot.jsp">티팟</a></li>
+                </ul><!--sub-menu-->
+            </li>
+            <li class="main-menu"><a href="haru.jsp">하루한잔</a></li>
+			<li class="main-menu"><%if(id == "" || id == null){%>
+                           <a href="login.html"> LOGIN
+                        <%} else {%>
+                           <a href="logout.jsp"> LOGOUT 
+                        <%}%></a></li>
+            <li class="main-menu"><a href="mypage.jsp"><img src="../hanzan/img/mypage.png"></a></li>
+            <li class="main-menu"><a href="showCart.jsp"><img src="../hanzan/img/cart.png"></a></li>
+        </ul>
+    </header>
+<center>
+<div class="mypagemain">
+        <p>마이페이지</p>
+    </div>
+    <div class="mypage">
+        <ul class="mypagenav">
+            <li><a href="mypage.jsp">내 정보수정</a></li>
+            <li><a href="mypage.jsp">위시리스트</a></li>
+            <li><a href="mypage.jsp">주문내역</a></li>
+        </ul>
+    </div>
+
+  
+<div class="wishlist" style="margin-bottom: 50px">
+<%
+try {
+ 	 String DB_URL="jdbc:mysql://localhost:3306/hanzan";    // 접속 DB는 project
+     String DB_ID="multi"; 
+     String DB_PASSWORD="abcd";
+ 	 
+	 Class.forName("org.gjt.mm.mysql.Driver");  
+ 	 Connection con = DriverManager.getConnection(DB_URL, DB_ID, DB_PASSWORD); 
+	
+
+	String jsql = "select * from favorit";
+	PreparedStatement pstmt = con.prepareStatement(jsql);
+
+	ResultSet rs = pstmt.executeQuery();
+
+	while(rs.next()) 
+  		{			          
+
+	String no = rs.getString("prdNo");
+	String name = rs.getString("prdName");	
+	int price = rs.getInt("prdPrice");
+%> 
+        <ul class="wish">
+            <li>
+                <img src="./img/c<%=no%>.png">
+                <p><%=name%><span><%=price%>원</span></p>
+                <p><a href="viewDetailProduct.jsp?prdNo=<%=no%>">상세보기</a></p>
+                <p><a href="deleteFavorit.jsp?prdNo=<%=no%>">상품삭제</a></p>
+            </li>
+			<%
+	     }  // while문의 끝
+ %>
+        </ul>
+    </div><!--wishlist-->   
+
+<%
+		
+   }  catch(Exception e)  {
+        out.println(e);
+} 
+%>
+ </center>                
+ <footer>
+        <ul class="icon">
+            <li><a href = "https://www.instagram.com/"><img src="../hanzan/img/insta.png"></a></li>
+            <li><a href = "https://www.facebook.com/"><img src="../hanzan/img/facebook.png"></a></li>
+        </ul>
+        <p><span><a href="adminlogin.jsp">관리자 로그인</a></span>
+            Address : Gangnam, Seoul, Korea / tel : 010-1212-3232 / E-mail : hanzan@naver.com
+            <span>Copyright : hanzan.All rights reserved.</span>
+        </p>
+    </footer>
+</body>  
+</html> 

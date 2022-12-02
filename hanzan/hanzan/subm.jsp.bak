@@ -1,0 +1,139 @@
+<%@ page contentType="text/html;charset=euc-kr" pageEncoding="utf-8" %>
+<%@ page import="java.sql.*" %>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="wodtj=device.width, inital-scale=1.0">
+    <title>한잔 명차</title>
+    <link rel="stylesheet" href="../hanzan/css/hanzan.css">
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/hanzan.js"></script>
+</head>
+<body>
+    <%
+     //   로그인 상태를 유지하기 위하여, sid에 저장되었던 접속한 ID값을 
+     //   session 객체로부터 가져와서 변수 id에 저장시킴 (loginOK.jsp의 43행부분 확인요망!)
+   String id = (String)session.getAttribute("sid"); 
+   // String id = session.getAttribute("sid").toString(); 와  동일함
+                                                                                         
+%>
+    <header>
+        <div class="logo">
+		<%if(id == "" || id == null){%>
+         <a href="index.html">
+      <%} else {%>
+         <a href="index.jsp">
+      <%}%>
+		<img src="../hanzan/img/logo.png"></a></div>
+        <ul class="nav">
+            <li class="main-menu"><a href="teastory.jsp">차 이야기</a></li>
+            <li class="main-menu">
+                <a href="#">차 가게</a>
+                <ul class="sub-menu1 hide">
+                    <li><a href="subn.jsp">녹차/발효차/홍차</a></li>
+                    <li><a href="subm.jsp">허브티(무카페인)</a></li>
+                    <li><a href="subb.jsp">블랜디드티</a></li>
+                </ul><!--sub-menu-->
+            </li>
+            <li class="main-menu">
+				<a href="#">다과</a>
+                <ul class="sub-menu3 hide">
+                    <li><a href="desert.jsp">한과</a></li>
+                    <li><a href="desert2.jsp">화과자</a></li>
+                </ul><!--sub-menu-->
+			</li>
+            <li class="main-menu">
+                <a href="#">다구</a>
+                <ul class="sub-menu2 hide">
+                    <li><a href="teazan.jsp">찻잔</a></li>
+                    <li><a href="teapot.jsp">티팟</a></li>
+                </ul><!--sub-menu-->
+            </li>
+            <li class="main-menu"><a href="haru.jsp">하루한잔</a></li>
+			<li class="main-menu"><%if(id == "" || id == null){%>
+                           <a href="login.html"> LOGIN
+                        <%} else {%>
+                           <a href="logout.jsp"> LOGOUT 
+                        <%}%></a></li>
+            <li class="main-menu"><a href="mypage.jsp"><img src="../hanzan/img/mypage.png"></a></li>
+            <li class="main-menu"><a href="showCart.jsp"><img src="../hanzan/img/cart.png"></a></li>
+        </ul>
+    </header>
+
+    <div class="mtmain">
+        <div class="mtmaintxt">
+            <p>허브티(무카페인)</p>
+            <p><span>진정 료과, 소화, 원기 회복에 좋은</span><span>꽃잎, 과일향이 가득한 풍미가 돋보이는 허브티입니다.</span></p>
+        </div>
+    </div>
+
+    <div class="custom">
+        <div class="customtxt">
+            <p>Recommend</p>
+            <p>감기예방 효과에<span>좋은 도라지차는 어떠신가요?</span></p>
+            <a href="viewDetailProduct.jsp?prdNo=M1">자세히 보기</a>
+        </div>
+    </div>
+
+    <div class="submtea">
+        <p class="submt">허브티</p>
+        <ul class="subm">
+            <li>
+                <a href="viewDetailProduct.jsp?prdNo=M1"><img class="r" src="./img/mtea1.png"></a>
+                <div class="submtxt">
+                    <p>도라지차</p><a href="#"><img src="./img/arrow.png"></a>
+                    <p>상쾌하고 맑은 잎차<span>15,000원</span></p>
+                </div>
+            </li>
+            <li>
+                <a href="viewDetailProduct.jsp?prdNo=M2"><img class="r" src="./img/mtea2.png"></a>
+                <div class="submtxt">
+                    <p>캐모마일</p><a href="#"><img src="./img/arrow.png"></a>
+                    <p>은은하고 달콤한 잎차<span>15,000원</span></p>
+                </div>
+            </li>
+            <li>
+                <a href="viewDetailProduct.jsp?prdNo=M3"><img class="r" src="./img/mtea3.png"></a>
+                <div class="submtxt">
+                    <p>루이보스 퓨어</p><a href="#"><img src="./img/arrow.png"></a>
+                    <p>달달하고 뒷맛이 개운한 잎차<span>15,000원</span></p>
+                </div>
+            </li>
+            <li>
+                <a href="viewDetailProduct.jsp?prdNo=M4"><img class="r" src="./img/mtea4.png"></a>
+                <div class="submtxt">
+                    <p>모로칸민트티</p><a href="#"><img src="./img/arrow.png"></a>
+                    <p>기분좋은 상쾌함을 선사하는 잎차<span>15,000원</span></p>
+                </div>
+            </li>
+            <li>
+                <a href="viewDetailProduct.jsp?prdNo=M5"><img class="r" src="./img/mtea5.png"></a>
+                <div class="submtxt">
+                    <p>제주 쑥차</p><a href="#"><img src="./img/arrow.png"></a>
+                    <p>혈액순환에 좋은 향긋한 잎차<span>35,000원</span></p>
+                </div>
+            </li>
+            <li>
+                <a href="viewDetailProduct.jsp?prdNo=M6"><img class="r" src="./img/mtea6.png"></a>
+                <div class="submtxt">
+                    <p>스윗 베리 루이보스티</p><a href="#"><img src="./img/arrow.png"></a>
+                    <p>상큼한 라즈베리와 루이보스의 만남<span>8,800원</span></p>
+                </div>
+            </li>
+        </ul>
+    </div><!--submtea-->
+    
+    <footer>
+        <ul class="icon">
+            <li><img src="../hanzan/img/insta.png"></li>
+            <li><img src="../hanzan/img/facebook.png"></li>
+        </ul>
+        <p>
+            Address : Gangnam, Seoul, Korea / tel : 010-1212-3232 / E-mail : hanzan@naver.com
+            <span>Copyright : hanzan.All rights reserved.</span>
+        </p>
+    </footer>
+</body>
+</html>
