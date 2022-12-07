@@ -1,0 +1,29 @@
+.adminpage {
+  width: 30%;
+  padding: 30px;
+  margin: 15% 35%;
+  border: 1px solid #999;
+}
+.adminpage h1 {
+  text-align: center;
+}
+.adminpage .input_admin {
+  width: 100%;
+  margin-top: 40px;
+}
+.adminpage input {
+  width: 80%;
+  height: 40px;
+  padding-left: 3%;
+  margin-left: 10%;
+  margin-bottom: 10px;
+}
+.adminpage .adminLogin {
+  border: none;
+  width: 80.5%;
+  height: 40px;
+  background-color: #707fc2;
+  border-radius: 5px;
+  color: #fff;
+  margin-left: 9.5%;
+}
